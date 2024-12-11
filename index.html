@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--custom color-->
     <script>
         tailwind.config = {
@@ -20,6 +25,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        coupon1: '#FFBF0F',
+                        coupon2: '#F78C9C',
                         smprime: '#03071299',
                         mgreen: '#1DD100',
                     }
@@ -67,9 +74,9 @@
             </div>
         </nav>
         <!--hero starts from here-->
-        <section class="rounded-3xl md:container md:mx-auto overflow-hidden">
+        <section class="rounded-3xl max-w-6xl md:mx-auto overflow-hidden">
             <div class="hero min-h-screen" style="background-image: url('images/banner.png');">
-                <div class=" bg-opacity-50"></div> <!-- Added bg-opacity for overlay transparency -->
+                <div class=" bg-opacity-50"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="max-w-lg">
                         <h1 class="mb-5 text-5xl font-bold raleway text-white">End-to-End travel with <br><span
@@ -88,7 +95,7 @@
                     <div><img src="images/people.png" alt="failed to load"></div>
                     <div>
                         <h3 class="raleway text-4xl font-lg">500k+<br> <span
-                                class="raleway font -md text-sm text-smprime">Registered users</span></h3>
+                                class="raleway font -md text-sm text-[#03071280]">Registered users</span></h3>
                     </div>
                 </div>
                 <div
@@ -96,7 +103,7 @@
                     <div><img src="images/ticket-cupon.png" alt="failed to load"></div>
                     <div>
                         <h3 class="raleway text-4xl font-lg">1.7Lacs<br> <span
-                                class="raleway font -md text-sm text-smprime">Tickets sold</span></h3>
+                                class="raleway font -md text-sm text-[#03071280]">Tickets sold</span></h3>
                     </div>
                 </div>
                 <div
@@ -104,7 +111,7 @@
                     <div><img src="images/stoppage.png" alt="failed to load"></div>
                     <div>
                         <h3 class="raleway text-4xl font-lg">80+<br> <span
-                                class="raleway font -md text-sm text-smprime">Rental Partners</span></h3>
+                                class="raleway font-md text-sm text-[#03071280]">Rental Partners</span></h3>
                     </div>
                 </div>
             </div>
@@ -113,8 +120,44 @@
     </header>
     <main>
         <!--offer section starts here-->
-        <section>
+        <section class="flex flex-col items-center justify-center md:container md:mx-auto text-center gap-20">
+            <h1 class="mt-12 text-5xl font-bold raleway text-black">Best offers for you</h1>
+            <div class="flex flex-row gap-16 justify-center">
+                <div class="flex items-center justify-between bg-coupon1 max-w-96 rounded-lg shadow-md">
+                    <!-- Left Section -->
+                    <div class="pl-6">
+                        <p class="text-3xl font-bold text-[#030712CC]" inter>15% OFF</p>
+                        <p class="text-sm text-[#030712CC] font-semibold mt-1 inter">on your next purchase</p>
+                        <p class="text-xs text-[#03071280] mt-1 inter">use by January 2024</p>
+                    </div>
+                    <!-- Divider -->
+                    <div class="h-fit "><img src="images/cupon-devider.png" alt=""></div>
+                    <!-- Right Section -->
+                    <div class="pr-6 text-center">
+                        <p class="text-2xl font-bold text-[#030712CC] inter">New 15</p>
+                        <p class="text-sm text-[#030712CC] font-medium inter">Coupon Code</p>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center justify-between bg-coupon2 max-w-96 rounded-lg shadow-md">
+                    <!-- Left Section -->
+                    <div class="pl-6">
+                        <p class="text-3xl font-bold text-[#030712CC] inter">20% OFF</p>
+                        <p class="text-sm text-[#030712CC] font-semibold mt-1 inter">on your next purchase</p>
+                        <p class="text-xs text-[#03071280] mt-1 inter">use by January 2024</p>
+                    </div>
+                    <!-- Divider -->
+                    <div class="h-fit "><img src="images/cupon-devider.png" alt=""></div>
+                    <!-- Right Section -->
+                    <div class="pr-6 text-center">
+                        <p class="text-2xl font-bold text-[#030712CC] inter">Couple 20</p>
+                        <p class="text-sm text-[#030712CC] font-medium inter">Coupon Code</p>
+                    </div>
+                    
+                </div>
+            </div>
 
+            <button class="btn border-mgreen text-mgreen w-52">See all offers</button>
         </section>
         <!--offer section end here-->
     </main>
