@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--custom font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--custom color-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        smprime: '#03071299',
+                        mgreen: '#1DD100',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="md:container md:mx-auto">
+        <nav class="py-2 px-60 sm:px-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl raleway font-extrabold">Green-Line Ltd.</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn raleway text-mgreen font-bold">Bus<img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <!--hero starts from here-->
+        <section class="rounded-3xl md:container md:mx-auto overflow-hidden">
+            <div class="hero min-h-screen" style="background-image: url('images/banner.png');">
+                <div class=" bg-opacity-50"></div> <!-- Added bg-opacity for overlay transparency -->
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-lg">
+                        <h1 class="mb-5 text-5xl font-bold raleway text-white">End-to-End travel with <br><span
+                                class="text-mgreen raleway">Green Line Paribahan</span></h1>
+                        <p class="mb-5 raleway text-white">
+                            We ensure the best travel service all across the country.Please contact with us for more
+                            details about departure and destination.
+                        </p>
+                        <button class="btn border-none fond-lg bg-mgreen raleway text-black">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row gap-24 justify-center z-10 relative bottom-10">
+                <div
+                    class="bg-slate-100 rounded-xl flex flex-row max-w-96 border-b-2 border-mgreen justify-between p-2 gap-3 align-center">
+                    <div><img src="images/people.png" alt="failed to load"></div>
+                    <div>
+                        <h3 class="raleway text-4xl font-lg">500k+<br> <span
+                                class="raleway font -md text-sm text-smprime">Registered users</span></h3>
+                    </div>
+                </div>
+                <div
+                    class="bg-slate-100 rounded-xl flex flex-row max-w-96 border-b-2 border-mgreen justify-between p-2 gap-3 align-center">
+                    <div><img src="images/ticket-cupon.png" alt="failed to load"></div>
+                    <div>
+                        <h3 class="raleway text-4xl font-lg">1.7Lacs<br> <span
+                                class="raleway font -md text-sm text-smprime">Tickets sold</span></h3>
+                    </div>
+                </div>
+                <div
+                    class="bg-slate-100 rounded-xl flex flex-row max-w-96 border-b-2 border-mgreen justify-between p-2 gap-3 align-center">
+                    <div><img src="images/stoppage.png" alt="failed to load"></div>
+                    <div>
+                        <h3 class="raleway text-4xl font-lg">80+<br> <span
+                                class="raleway font -md text-sm text-smprime">Rental Partners</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--hero ends here-->
+    </header>
+    <main>
+        <!--offer section starts here-->
+        <section>
+
+        </section>
+        <!--offer section end here-->
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
