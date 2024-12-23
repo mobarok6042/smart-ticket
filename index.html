@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Best bus ticket service in your city.</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
@@ -163,7 +163,7 @@
         <!--ticket section starts here-->
         <section class="border-t-2 border-mgreen rounded-t-3xl bg-ticketbg">
             <div class="flex items-center justify-center flex-col my-16 gap-8">
-                <h1 class="justify-center font-bold text-6xl text-[#030712] raleway">Green Line Paribahan</h1>
+                <h1 class="justify-center font-bold text-6xl text-[#030712CC] raleway">Green Line Paribahan</h1>
                 <p class="text-base text-[#030712CC] font-medium raleway">We provide the most affordable cost for ticket
                     price at any kind of seat. </p>
             </div>
@@ -227,13 +227,12 @@
 
             </div>
             <!--booking starts here-->
-            <div class="flex flex-row max-w-6xl container mx-auto bg-white rounded-2xl gap-16 p-8">
-                <!--left side-->
-                <div class="flax gap-6 container mx-auto">
-                    <p class="font-bold text-3xl text-[#030712] raleway mt-8 ml-3 ">Select your seat here. </p>
-                    
+            <div class="flex lg:flex-row max-w-6xl  mx-auto bg-white rounded-2xl p-8"> <!--left side-->
+                <div class="flax gap-6 container  ">
+                    <p class="font-bold text-3xl text-[#132350] raleway mt-8 ml-3 ">Select your seat here. </p>
+
                     <div class="divider max-w-xl"></div>
-                    
+
                     <div class="flex justify-between max-w-xl">
                         <div class="bg-[#0307120D] rounded-xl h-14 flex flex-row items-center justify-center px-4"><img
                                 src="images/seat-gray.png" alt="">
@@ -318,10 +317,70 @@
                         </div>
                     </div>
                 </div>
+                <!--vertical divider-->
+                <div class="border-l-2 border-gray-300 max-h-auto mx-4"></div>
                 <!--right side-->
-                <div class="max-w-md">
+                <div class="container max-w-sm mx-auto mt-8">
                     <div class="">
-                        <p class="font-bold text-3xl text-[#030712] raleway">Select your seat here. </p>
+                        <p class="font-bold text-3xl text-[#132350] raleway">Details of selected seat.</p>
+                    </div>
+                    <div class="bg-[#0307120D] rounded-xl mt-5 p-3">
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+                                        <th class="font-semibold text-[#030712] inter text-lg">Seat</th>
+                                        <th class="font-semibold text-[#030712] inter text-lg">Class</th>
+                                        <th class="font-semibold text-[#030712] inter text-lg">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="font-medium text-[#03071299] inter text-base">C2</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">Economy</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">550</td>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="font-medium text-[#03071299] inter text-base">C2</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">Economy</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">550</td>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="font-medium text-[#03071299] inter text-base">C2</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">Economy</td>
+                                        <td class="font-medium text-[#03071299] inter text-base">550</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="font-bold text-black inter text-xl">Total Price</td>
+                                        <td></td>
+                                        <td class="font-bold text-black inter text-xl">BDT 1650</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--table ends here-->
+                        <div class="relative max-w-md ml-3 mt-6">
+                            <!-- Input Field -->
+                            <input type="text" class="input w-full py-2 px-4 pr-16 rounded-lg"
+                                placeholder="Have any coupon?" />
+
+                            <!-- Button -->
+                            <button class="absolute right-1 top-1 bottom-1 bg-mgreen text-white px-4 rounded-lg">
+                                Apply
+                            </button>
+                        </div>
+                        <div class="max-w-md flex flex-row justify-between px-2 mt-5">
+                            <p class="font-bold text-black inter text-xl">Grand Total</p>
+                            <p class="font-bold text-black inter text-xl">BDT 1650</p>
+                        </div>
+                    </div>
+                    <div>
+                          
                     </div>
                 </div>
             </div>
