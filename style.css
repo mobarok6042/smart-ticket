@@ -4,3 +4,8 @@
 .inter{
     font-family: "Inter", sans-serif;
 }
+#applybtn:disabled{
+        background-color: #95a5a6; 
+        color: #ecf0f1; 
+        cursor: not-allowed; 
+      }
