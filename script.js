@@ -41,7 +41,7 @@ function handleSeatBtnClick(event) {
 function updateSelectedSeatsTable() {
   selectedSeatsTable.innerHTML = "";
 
-  selectedSeats.forEach(seat => {
+  selectedSeats.forEach((seat) => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${seat.id}</td>
@@ -62,44 +62,43 @@ function updateSelectedSeatsTable() {
     <td>Total Price: ${totalPrice}</td>
   `;
   selectedSeatsTable.appendChild(totalRow);
-  
 }
 
-
-
-seatBtns.forEach(btn => {
+seatBtns.forEach((btn) => {
   btn.addEventListener("click", handleSeatBtnClick);
 });
 
 //applying coupon code//
-const input = document.getElementById("input");
-const applybtn = document.getElementById("applybtn");
+
 const grandTotal = document.getElementById("gtotal");
 
-const updateTotalElement = document.getElementById("totalPrice"); 
-const totalPrice = parseFloat(updateTotalElement.innerText); // Ensure this is correctly parsed
+const updateTotalElement = document.getElementById("totalPrice");
+const totalPrice = parseFloat(updateTotalElement.innerText); 
+
+const input = document.getElementById("input");
+const applybtn = document.getElementById("apply-btn");
 
 function checkCondition() {
-  // console.log(input.value); // Debugging: Check the input value
-  
   if (input.value === "New15" || input.value === "Couple20") {
-    applybtn.disabled = false; // Enable the button
+    applybtn.disabled = false; 
   } else {
-    applybtn.disabled = true; // Disable the button
+    applybtn.disabled = true; 
   }
 }
+
+input.addEventListener("input", checkCondition);
 
 function calculateDiscount() {
   let discount = 0;
   if (input.value === "New15") {
     discount = totalPrice * 0.15;
   } else if (input.value === "Couple20") {
-    discount = totalPrice * 0.20;
+    discount = totalPrice * 0.2;
   }
   const discountedPrice = totalPrice - discount;
-  grandTotal.innerText = `BDT ${discountedPrice.toFixed(2)}`; // Update the grand total with formatting
+  grandTotal.innerText = `BDT ${discountedPrice.toFixed(2)}`; 
 }
 
-// Add event listeners
-input.addEventListener("input", checkCondition);
+
+
 applybtn.addEventListener("click", calculateDiscount);
